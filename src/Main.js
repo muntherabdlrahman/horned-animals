@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import HornedBeasts from './HornedBeasts'
-import { Row } from 'react-bootstrap'
-import horendData from './data.json'
+import  HornedForm  from './HornedForm'
 
 class Main extends Component {
 
@@ -21,15 +19,8 @@ class Main extends Component {
     // }
     return (
       <div>
-        <Row>
-          {
-            horendData.map((horend, index) => {
-              return < HornedBeasts key={index} image_url={horend.image_url} title={horend.title}
-                description={horend.description} />
-            })
-          }
-         
-        </Row>
+        
+      <HornedForm/>
       </div>
     )
   }

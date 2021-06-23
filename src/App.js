@@ -8,18 +8,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
  class App extends Component {
-   constructor(props){
-     super(props);
-     this.state={
-       dataForBeast:indevedvual
-     }
-   }
+//    constructor(props){
+//      super(props);
+//      this.state={
+//        dataForBeast:indevedvual
+//      }
+//    }
   render() {
     return (
-      <div>
+      <div style={{background:'#C5D7BD'}}>
          <Header/>
          <Main/>
-         <Mymodal/>
          <Footer/>
       </div>
     )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import Mymodul from './Mymodul';
+// import Mymodul from './Mymodul';
 class HornedBeasts extends Component {
     constructor(props) {
         super(props);
@@ -65,6 +65,12 @@ class HornedBeasts extends Component {
                             <Card.Title>{this.props.title}</Card.Title>
                             <Card.Text>
                                 {this.props.description}
+                                <br/>
+                                <br/>
+
+                                <p> The Horns Type is
+                                { this.props.horns}
+                                </p>
                                 <br />
                                 <span>
                                     <i class="fab fa-gratipay">{this.state.numOfVotes}</i>
@@ -73,7 +79,7 @@ class HornedBeasts extends Component {
                             {/* <Button variant="primary">Go somewhere</Button> */}
                             {/* <button> Slecte this Beast </button> */}
 
-                            <Mymodul/>
+                            {/* <Mymodul/> */}
                             
 
 
