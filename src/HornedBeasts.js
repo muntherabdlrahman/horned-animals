@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-// import Mymodul from './Mymodul';
+import horndData from './data.json'
+
 class HornedBeasts extends Component {
     constructor(props) {
         super(props);
@@ -22,6 +23,17 @@ class HornedBeasts extends Component {
         this.setState({
             numOfVotes: this.state.numOfVotes + 1
         })
+    }
+
+    clickme=()=>{
+        let data={
+            
+            title1:this.props.title,
+            image_url1: this.props.image_url,
+            description1:this.props.description}
+    
+           {this.props. showmodal(data)}
+        
     }
 
 
@@ -77,6 +89,8 @@ class HornedBeasts extends Component {
                                 </span>
                             </Card.Text>
                             {/* <Button variant="primary">Go somewhere</Button> */}
+                            <Button  style={{ width: "30%", marginTop: "2vh",  }} variant="danger" onClick={this.clickme}>Slecte this Beast </Button>
+
                             {/* <button> Slecte this Beast </button> */}
 
                             {/* <Mymodul/> */}
